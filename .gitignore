@@ -1,0 +1,10 @@
+/cmake-build-*
+/node_modules
+/.idea
+*.js
+*.map
+*.d.ts
+!index.js
+!index.d.ts
+/build
+/tsconfig.tsbuildinfo
