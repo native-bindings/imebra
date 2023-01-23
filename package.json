@@ -4,14 +4,14 @@
     "codestreamjs": "^0.0.1",
     "nan": "2.x"
   },
-  "files":[
+  "files": [
     "imebra",
     "*.js",
     "*.d.ts",
     "*.map"
   ],
   "name": "node-imebra",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "postinstall": "npx cmake-js compile"
   },
