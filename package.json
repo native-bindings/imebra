@@ -16,6 +16,9 @@
     "CMakeLists.txt",
     "imebra",
     "*.js",
+    "*.cpp",
+    "*.hpp",
+    "*.h",
     "*.d.ts",
     "*.map"
   ],
