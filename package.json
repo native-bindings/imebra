@@ -4,6 +4,14 @@
     "codestreamjs": "^0.0.1",
     "nan": "2.x"
   },
+  "keywords": [
+    "imebra",
+    "dcm",
+    "image",
+    "dicom",
+    "jpeg",
+    "png"
+  ],
   "files": [
     "imebra",
     "*.js",
