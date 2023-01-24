@@ -4,6 +4,10 @@
     "codestreamjs": "^0.0.1",
     "nan": "2.x"
   },
+  "repository": {
+    "url": "github:VictorQueiroz/node-imebra",
+    "type": "git"
+  },
   "keywords": [
     "imebra",
     "dcm",
