@@ -27,7 +27,7 @@
     "*.map"
   ],
   "name": "node-imebra",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "postinstall": "npx cmake-js compile"
   },
