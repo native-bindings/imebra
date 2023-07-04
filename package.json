@@ -23,7 +23,7 @@
     "*.{cpp,h,d.ts,js,map,hpp}"
   ],
   "name": "node-imebra",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "scripts": {
     "test": "npx ts-node test",
     "prepublishOnly": "npx cmake-js compile && yarn test",
