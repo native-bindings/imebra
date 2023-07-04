@@ -18,16 +18,12 @@
   ],
   "files": [
     "CMakeLists.txt",
-    "imebra",
-    "*.js",
-    "*.cpp",
-    "*.hpp",
-    "*.h",
-    "*.d.ts",
-    "*.map"
+    "imebra-cmake",
+    "openjpeg-cmake",
+    "*.{cpp,h,d.ts,js,map,hpp}"
   ],
   "name": "node-imebra",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "scripts": {
     "test": "npx ts-node test",
     "prepublishOnly": "npx cmake-js compile && yarn test",
