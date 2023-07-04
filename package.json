@@ -27,9 +27,10 @@
     "*.map"
   ],
   "name": "node-imebra",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "scripts": {
-    "prepublishOnly": "npx cmake-js compile && npx ts-node test",
+    "test": "npx ts-node test",
+    "prepublishOnly": "npx cmake-js compile && yarn test",
     "postinstall": "npx cmake-js compile"
   },
   "devDependencies": {
