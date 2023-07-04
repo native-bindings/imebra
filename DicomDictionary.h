@@ -9,6 +9,7 @@ public:
     static void Init(v8::Local<v8::Object> exports);
 private:
     static NAN_METHOD(GetTagDescription);
+    static NAN_METHOD(GetTagType);
 };
 
 #endif // DICOMDICTIONARY_H

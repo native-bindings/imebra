@@ -1,17 +1,20 @@
-option(IMEBRA_TESTS "Enable IMEBRA tests" FALSE)
-option(NODE_INSTALL_PATH "Node installation path" "/usr/share/node")
-
-project(node_imebra C CXX)
-
-set(JPEG2000 2)
-
-cmake_minimum_required(VERSION 3.10)
-
+# initial config
+project(node_imebra CXX)
+cmake_minimum_required(VERSION 3.13.4)
 add_definitions(-Wfatal-errors)
-
-add_subdirectory(imebra)
-
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
+
+option(IMEBRA_TESTS "Enable IMEBRA tests" FALSE)
+
+if(NOT DEFINED CMAKE_JS_VERSION)
+    option(NODE_INSTALL_PATH "Node installation path" "/usr/share/node")
+endif()
+# load openjpeg from local
+add_subdirectory(openjpeg-cmake)
+
+# imebra CMake options
+add_subdirectory(imebra-cmake)
 
 set(
     IMEBRA_SRC DicomDefinitions.hpp DicomDefinitions.cpp
@@ -42,6 +45,6 @@ else()
     )
     target_compile_options(imebra_test PRIVATE -Wfatal-errors)
 
-    add_executable(dicom_example node_imebra/examples/c++/dicom2jpeg/dicom2jpeg.cpp)
-    target_link_libraries(dicom_example PRIVATE node_imebra)
+#    add_executable(dicom_example node_imebra/examples/c++/dicom2jpeg/dicom2jpeg.cpp)
+#    target_link_libraries(dicom_example PRIVATE node_imebra)
 endif()

@@ -8,3 +8,4 @@
 !index.d.ts
 /build
 /tsconfig.tsbuildinfo
+/*.tgz

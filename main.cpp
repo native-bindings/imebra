@@ -16,7 +16,7 @@
 
 using namespace bindings;
 
-NAN_MODULE_INIT(Init){
+NAN_MODULE_INIT(Init) {
     PatientName::Init(target);
     DicomDir::Init(target);
     TagId::Init(target);
